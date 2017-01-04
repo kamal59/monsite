@@ -208,13 +208,13 @@
     <div class="row">
     <h1>contact</h1>
     <p><span style="color: #000000;"><strong>Vous souhaitez me contacter ?</strong>&nbsp;Je suis actuellement ouvert à toutes opportunités professionnelles dans l’univers du web, alors n’hésitez pas à prendre contact avec moi.</span></p>
-                <form method=POST action=mail.php name="sentMessage" id="contactForm" novalidate >
+                <form action="https://formspree.io/kamal.machto@gmail.com" method="POST" novalidate >
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name" >
                                 Nom</label>
-                            <input type="text" class="form-control" id="name" placeholder="Votre nom" required="required" />
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Votre nom" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
@@ -222,12 +222,12 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" id="email" placeholder="votre mail xyz@xxx.com" required="required" /></div>
+                                <input type="email" name="_replyto" class="form-control" id="email" placeholder="votre mail xyz@xxx.com" required="required" /></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
                                 Sujet</label>
-                           <input type="text" class="form-control" id="sujet" placeholder="Votre sujet" required="required" />
+                           <input type="text" name="sujet" class="form-control" id="sujet" placeholder="Votre sujet" required="required" />
                         </div>
                     </div>
                     <div class="col-md-6">
